@@ -1,0 +1,3 @@
+# Tic-Tac-Toe AI Agent Readme
+
+This project features an AI agent that engages in a game of Tic-Tac-Toe against a human player, employing algorithms such as Minimax with or without Alpha-Beta Pruning to ensure unbeatable gameplay. Users can run the project within a Python environment, experiencing the implementation of game theory and basic search algorithms in the context of Tic-Tac-Toe. The readme guides users through setup instructions, explains the core algorithms utilized for the AI's decision-making process, and encourages exploration and customization. The document concludes by emphasizing the educational value of the project in enhancing understanding of game theory and fundamental search algorithms.
