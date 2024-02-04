@@ -1,0 +1,43 @@
+rule based responsive chatbot:
+
+class PlantChatbot:
+    def __init__(self):
+        self.responses = {
+            "hello": "Heyy!🤗 How can I help you with plants today?",
+            "tell me about plants": "Plants are living organisms that typically have leaves, stems, and roots. They need sunlight, water, and nutrients to grow.",
+            "best indoor plants": "Some popular indoor plants include snake plant, pothos, peace lily, and spider plant. They are known for their air-purifying qualities.",
+            "how to care for succulents": "Succulents thrive in well-draining soil, require bright light, and need infrequent watering. Overwatering is a common issue.",
+            "goodbye": "Goodbye! If you have more plant questions, feel free to ask.",            
+            "are you a plant": "No, I'm the pot below the plant!",
+            "who are you": "I am a chatbot (thats what my creator believes, but i am not😂)",
+            "whats your name": "My name is little monster and your name😏?",
+            "my name is": "thats an amazing name for a beautiful lady😏🤌",
+            "ok enough of this, what do you know about tomatos": "As per your orders mam🫡, Tomato is a red colour fruit like this🍅, though some people think its a vege😂😂 JK.. The tomato is the edible berry of the plant Solanum lycopersicum, commonly known as the tomato plant. The species originated in western South America, Mexico, and Central America. The Nahuatl word tomatl gave rise to the Spanish word tomate, from which the English word tomato derives.And it can survive without water for upto 3 days in pot and upto 1 week in lands.",
+            "how much water does avocados need to grow": "On average, about 283 litres of applied water are required to produce a kilogram of avocados. This is fresh ground or surface water that is applied via irrigation or other methods in order to produce a crop of the fruit, and does not include rainfall or natural moisture in the soil.",
+            "and you?": "Nice humour😂, I would love to taste water but unfortunately i can't since i am an AI",
+            "what do you know about onions": "An onion looks like this 🧅 also known as the bulb onion or common onion, is a vegetable that is the most widely cultivated species of the genus Allium. 🤗",
+            "how long does wheat take to grow": "spring wheat needs about 100–130 days to grow, while growing winter wheat takes about 180–250 days",
+            "do you know about pest": "A pest somewhat looks like this🪳, 😂 JK a pest is an organism living and growing where they are not wanted and can cause damage to plants, humans, structures, and other creatures, including crops that are grown for food",
+            "tell me something about carrot": "carrot is an orange colour vege😂😂😂 also it looks like 🥕 this and mostly used as nose for snowman ☃️",            
+            "default": "I'm not sure how to respond to that. If you have a specific plant-related question, ask away!",
+        }
+
+    def get_response(self, user_input):
+        user_input = user_input.lower()
+        for pattern, response in self.responses.items():
+            if pattern in user_input:
+                return response
+        return self.responses["default"]
+
+# Example usage
+plant_bot = PlantChatbot()
+
+print("🪴: Yoo buddy!! Let's talk about plants and say goodbye to end this convo, though i will be sad to let you go.")
+
+while True:
+    user_input = input("> ")
+    if user_input.lower() == "goodbye":
+        print("🪴: Goodbye my friend💕 it was a delightful conversation💐! Have a green day!")
+        break
+    response = plant_bot.get_response(user_input)
+    print("🪴:", response)
