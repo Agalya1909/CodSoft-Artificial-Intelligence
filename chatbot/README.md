@@ -1,0 +1,3 @@
+# Simple Chatbot Readme
+
+This straightforward chatbot is developed using if-else statements and pattern matching techniques to interpret user inputs and generate relevant responses. The script, which requires a Python environment, provides a foundational exploration of natural language processing and conversation flow. Users can run the chatbot, interact by entering queries, and observe how the system employs predefined rules to tailor its responses. The readme encourages users to delve into the code for insights into language understanding, offers suggestions for customization, and hints at potential enhancements with external libraries. The document concludes with an invitation for contributions, feedback, and enjoyment in experimenting with the chatbot.
